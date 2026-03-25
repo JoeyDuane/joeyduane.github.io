@@ -24,9 +24,17 @@ summaryLength = 30
     Content = "我使用 Blog 来记录技术笔记、研究进展和生活随笔。"
 
   # Social links
-  [params.socialIcons.icon]
+  [[params.socialIcons]]
     name = "github"
     url = "https://github.com/JoeyDuane"
+
+  [[params.socialIcons]]
+    name = "neteasecloudmusic"
+    url = "https://music.163.com/#/user/home?id=571342550"
+
+  [[params.socialIcons]]
+    name = "bilibili"
+    url = "https://space.bilibili.com/351742897/"
 
 # Main menu
 [[menu.main]]
