@@ -1,0 +1,11 @@
+baseURL = "https://joeyduane.github.io/"
+title = "Joey Duane's Blog"
+languageCode = "zh-CN"
+
+# Site parameters (extend later)
+[params]
+  author = "Joey Duane"
+  description = "Personal blog for technical notes, research, and journals."
+
+# Hugo best practices
+disableKinds = ["taxonomy", "term"]  # can be enabled later
