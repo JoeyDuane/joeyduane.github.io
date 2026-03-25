@@ -3,40 +3,39 @@ title = "Joey Duane's Blog"
 languageCode = "zh-CN"
 theme = "PaperMod"
 
-# basic argument
 paginate = 10
 summaryLength = 30
 
 [params]
   author = "Joey Duane"
   description = "技术笔记 · 学术研究 · 个人日志"
-  defaultTheme = "auto"          # light / dark / auto
+  defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
-  ShowToc = true                 # menus
-  comments = false               # could open later
+  ShowToc = true
+  comments = false
 
-  # 首页显示模式
-  homeInfoParams:
-    Title: "你好，这里是 Joey。"
-    Content: "这里记录我的技术笔记、研究进展和生活随笔。"
+  # Home page info
+  [params.homeInfoParams]
+    Title = "你好，这里是 Joey。"
+    Content = "我使用 Blog 来记录技术笔记、研究进展和生活随笔。"
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "文章"
-    url = "/posts/"
-    weight = 10
+# Main menu (TOML array of tables)
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 10
 
-  [[menu.main]]
-    identifier = "journal"
-    name = "日志"
-    url = "/journal/"
-    weight = 20
+[[menu.main]]
+  identifier = "journal"
+  name = "日志"
+  url = "/journal/"
+  weight = 20
 
-  [[menu.main]]
-    identifier = "about"
-    name = "关于"
-    url = "/about/"
-    weight = 30
+[[menu.main]]
+  identifier = "about"
+  name = "关于"
+  url = "/about/"
+  weight = 30
