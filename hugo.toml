@@ -1,11 +1,42 @@
 baseURL = "https://joeyduane.github.io/"
 title = "Joey Duane's Blog"
 languageCode = "zh-CN"
+theme = "PaperMod"
 
-# Site parameters (extend later)
+# basic argument
+paginate = 10
+summaryLength = 30
+
 [params]
   author = "Joey Duane"
-  description = "Personal blog for technical notes, research, and journals."
+  description = "技术笔记 · 学术研究 · 个人日志"
+  defaultTheme = "auto"          # light / dark / auto
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowToc = true                 # menus
+  comments = false               # could open later
 
-# Hugo best practices
-disableKinds = ["taxonomy", "term"]  # can be enabled later
+  # 首页显示模式
+  homeInfoParams:
+    Title: "你好，这里是 Joey。"
+    Content: "这里记录我的技术笔记、研究进展和生活随笔。"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "journal"
+    name = "日志"
+    url = "/journal/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 30
