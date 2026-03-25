@@ -23,12 +23,12 @@ summaryLength = 30
     Title = "你好，这里是 Joey。"
     Content = "我使用 Blog 来记录技术笔记、研究进展和生活随笔。"
 
-  [params.socialIcons]
-    [[params.socialIcons.icon]]
-      name = "github"
-      url = "https://github.com/JoeyDuane"
+  # Social links
+  [params.socialIcons.icon]
+    name = "github"
+    url = "https://github.com/JoeyDuane"
 
-# Main menu (TOML array of tables)
+# Main menu
 [[menu.main]]
   identifier = "posts"
   name = "文章"
